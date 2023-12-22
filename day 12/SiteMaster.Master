@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteMaster.master.cs" Inherits="day_12.SiteMaster" %>
+
+<!DOCTYPE html>
+
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <style type="text/css">
+                
+        .auto-style2 {
+            width: 100%;
+        }
+        
+        .auto-style3 {
+            position: relative;
+            right: -67%;
+            left: 67%;
+            top: -2147483648px;
+            width: 90%;
+            height: 20%;
+            background-color: lightgreen;
+            color: darkblue;
+        }
+        
+    </style>
+    <link href="StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="topPanel"> <h2>Header</h2></div>
+        <div class="leftPanel"><h2>Left</h2></div>
+        <div><h2>Center</h2></div>
+        
+        <div class="rightPanel"><h2>Right
+            <table class="auto-style2">
+            <tr>
+                <td>
+                        <asp:HyperLink ID="Home" runat="server" NavigateUrl="~/Hope.aspx">Home</asp:HyperLink>
+                    </td>
+            </tr>
+            <tr>
+                <td>
+                        <asp:HyperLink ID="Articles" runat="server" NavigateUrl="~/Article.aspx">Articles</asp:HyperLink>
+                    </td>
+            </tr>
+            </table>
+            </h2></div>
+            <table class="auto-style2">
+                <tr>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                </tr>
+            </table>
+        </div>
+        <div  class="centerPanel">
+             
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    
+           <h1 style="margin-top: 352px">footer</h1>
+ 
+    
+</body>
+    
+</html>
